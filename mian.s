@@ -43,5 +43,3 @@ main:
 	inicio_otro_juego:
 	
 	terminar_consola:
-	li $v0 10
-	syscall
