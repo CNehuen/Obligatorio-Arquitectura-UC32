@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 .generated_files/flags/default/6ddfab47437c51e303b33c2f3a30a7db7580d22d
 .generated_files/flags/default/962c7c9553da9a568aa17b089bafc76dd59beaa5
 .generated_files/flags/default/e4142b9b20c95f6077f0067b9fcceaad5f3f3fe5
@@ -6,4 +7,9 @@
 nbproject/private/private.xml
 .generated_files/flags/default/e4142b9b20c95f6077f0067b9fcceaad5f3f3fe5
 .generated_files/flags/default/dbc84c1070683e84be20f6891eecf4ec02ea57f9
+.generated_files/flags/default/2f914387fcce57635ebc9fe24ce7e9af975955ea
+.generated_files/flags/default/6dcf8c9309fd8ff2fa4104fdf30f0245da559a6d
+=======
 nbproject/private/private.xml
+*.xml
+>>>>>>> Stashed changes
