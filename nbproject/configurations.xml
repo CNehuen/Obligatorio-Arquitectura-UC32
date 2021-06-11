@@ -14,6 +14,17 @@
                    projectFiles="true">
       <itemPath>main.s</itemPath>
       <itemPath>newAsmTemplate.s</itemPath>
+      <itemPath>flappyBird.s</itemPath>
+      <itemPath>update_bird.s</itemPath>
+      <itemPath>update_column.s</itemPath>
+      <itemPath>columnasVerticales.s</itemPath>
+      <itemPath>update_score.s</itemPath>
+      <itemPath>getFont8x8.s</itemPath>
+      <itemPath>flappy_new_game.s</itemPath>
+      <itemPath>dibujarString.s</itemPath>
+      <itemPath>perdio.s</itemPath>
+      <itemPath>clean_screen.s</itemPath>
+      <itemPath>menu.s</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
