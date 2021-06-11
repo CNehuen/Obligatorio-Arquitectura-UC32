@@ -32,6 +32,7 @@ scores: .space 1
 .text
 main:
 	li $a0, 0
+	li $v0,0
 	jal menu # menu de seleccion de juego
 	beqz $v0,inicio_flappy_bird
 	beq $v0, 1, inicio_otro_juego
