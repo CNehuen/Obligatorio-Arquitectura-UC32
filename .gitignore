@@ -15,3 +15,6 @@ nbproject/private/private.xml
 >>>>>>> Stashed changes
 .generated_files/flags/default/1c0a9108e03e38021d6ad1060d36e764c845ba26
 *.mk
+.generated_files/flags/default/8483a7da6fd1c8b6cae264d5303b33ae9ba5580c
+*.mk
+*.properties
