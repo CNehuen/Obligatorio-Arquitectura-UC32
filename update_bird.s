@@ -13,7 +13,7 @@ movimientoPajaro:
 
 	la $a0, limpiarPajaro # Es para que borre  
 	li $a1, 20 	# Posicion en x siempre es 20
-	move $a2, $t2 # Voy a tener mi posicion en y 
+	addi $a2, $t2,0 # Voy a tener mi posicion en y 
 	jal dibujarString   
 	la $t1, coordenadaenY     				        				
 	lb $t2, ($t1) 
@@ -26,13 +26,12 @@ movimientoPajaro:
 		sub $t2, $t2, 1 	# Sube 1 pixel 
 		la $a0, bird8x8     # Dibuja el pajaro
 		li $a1, 20 			# Posicion en x
-		move $a2, $t2			# Nueva posicion en y 19 
-
+		addi $a2, $t2,0		# Nueva posicion en y 19 
 		sub $t3, $t3, 1     # Vuelvo mi boton a 0   
 		sb $t3, 1($t1)  	# Lo guardo					   
 		sb $t2, ($t1)    	# Guardo mi nueva posicion actual 
 		jal dibujarString		# Dibujo el pajaro
-		move $v0, $zero  			  						 
+		li $v0, 0
 		j finMovimientoPajaro  
 
 
@@ -41,7 +40,7 @@ movimientoPajaro:
 		beq $t2, 54, partidaPerdida                 
 		la $a0, bird8x8
 		li $a1, 20 
-		move $a2, $t2 													
+		addi $a2, $t2,0
 		sub $t3, $t3, 1 					
 		bgez $t3, ContinuarBajando	
 		addi $t3, $t3, 1
@@ -49,7 +48,7 @@ movimientoPajaro:
 			sb $t3, 1($t1)					 
 			sb $t2, ($t1)							
 			jal dibujarString		# Dibujo el pajaro
-			move $v0, $zero  
+			li $v0, 0
 
 		j finMovimientoPajaro
 

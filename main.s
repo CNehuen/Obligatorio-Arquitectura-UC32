@@ -28,11 +28,22 @@ limpiarPajaro: .asciiz " "
 scores: .space 1
 .text
 main:
+	/*
+	CONFIGURACION DEL PIC
+	 -> seleccionar pins I/O para botones
+	 -> seleccionar pines SPI
+	 -> setear temporizador
+	*/
+	li $t0, 0xf
+	sw $t0, TRISF # Configuro puerto F como entrada para botones
+	
+	
 	li $a0, 0
 	li $v0,0
 	jal menu /*menu de seleccion de juego*/
 	beqz $v0,inicio_flappy_bird
-	beq $v0, 1, inicio_otro_juego
+	li $t1,1
+	beq $v0, $t1, inicio_otro_juego
 	
 	inicio_flappy_bird:
 		jal flappy_bird

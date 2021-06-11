@@ -30,7 +30,7 @@ dibujarString:
 	mulu $t7, $t7, 4 
 	addu $t6, $t6, $t7
 	sub  $t6, $t6, 512   
-	move $t9, $a0 # Copiar a0 en t1
+	add $t9, $a0, $zero # Copiar a0 en t9
 	li $t0,0  # Contador para recorrer el string
 	loopString:
 	
