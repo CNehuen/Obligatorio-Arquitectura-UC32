@@ -8,7 +8,7 @@ sw $ra, ($sp)
 
 
 la $t1, column_coord
-la $t0, img
+# la $t0, img  #PODRIA SER DESCOMENTADO IMPORTANTE!
 lb $t2, ($t1)
 lb $t3, 1($t1)
 li $t4, 2  # variable contador de columna para mover
