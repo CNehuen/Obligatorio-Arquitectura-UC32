@@ -18,3 +18,6 @@ nbproject/private/private.xml
 .generated_files/flags/default/8483a7da6fd1c8b6cae264d5303b33ae9ba5580c
 *.mk
 *.properties
+*.mk
+*.xml
+*.properties
