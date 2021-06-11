@@ -25,6 +25,7 @@
       <itemPath>perdio.s</itemPath>
       <itemPath>clean_screen.s</itemPath>
       <itemPath>menu.s</itemPath>
+      <itemPath>creoArchivo.s</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

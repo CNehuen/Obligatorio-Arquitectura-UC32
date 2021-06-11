@@ -11,6 +11,3 @@ clean_screen:
 		
 	end_clean_screen:
 	jr $ra
-
-
-
