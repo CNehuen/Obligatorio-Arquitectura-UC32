@@ -15,11 +15,11 @@ ColumnasVerticales:
     mulu $t1, $t1, 4
     addu $t0, $t0,$t1   /*accedo a la posicion de memoria correspondiente al rectangulo a pintar*/
     pintar_rectangulos:
-	beqz $a2, salir_funcion_rectangulos	/*si no hay rectangulos para pintar, salgo*/
-	bgt $t0,$t3,salir_funcion_rectangulos   /*si trata pintar por fuera de la imagen, salgo*/
-	sw $a3, ($t0)			/*pinto el rectangulo*/
-	addiu $a2,$a2,-1							
-	addiu $t0,$t0,512		/*accedo al siguiente rectangulo a pintar*/
-    j pintar_rectangulos
+		beqz $a2, salir_funcion_rectangulos	/*si no hay rectangulos para pintar, salgo*/
+		bgt $t0,$t3,salir_funcion_rectangulos   /*si trata pintar por fuera de la imagen, salgo*/
+		sw $a3, ($t0)			/*pinto el rectangulo*/
+		addiu $a2,$a2,-1							
+		addiu $t0,$t0,512		/*accedo al siguiente rectangulo a pintar*/
+		j pintar_rectangulos
     salir_funcion_rectangulos:
     jr $ra

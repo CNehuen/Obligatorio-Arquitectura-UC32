@@ -28,8 +28,10 @@ flappy_new_game:
 	# por lo tanto los valores vuelven a repetirse cada 7*12 = 84 repeticiones
 	la $t0, pseudorandom_values
 	lb $t1, ($t0)
-	blt $t1,0, start_circular_array
-	bgt $t1, 12, start_circular_array
+	bltz $t1,start_circular_array
+	li $t2,12
+	sub $t2, $t2, $t1
+	bgtz $t2, start_circular_array
 	j load_circular_array
 	start_circular_array:
 		sb $zero, ($t0)
@@ -63,7 +65,8 @@ flappy_new_game:
 		jal update_column	# actualizo columnas y las creo si es necesario
 		jal update_bird		# actualizo la posicion del pajaro y verifico si choca contra la columna
 		jal perdio			# En caso de que choque, retorno por parametro un booleano True para notificar que se perdio y terminar la partida
-		beq $v0, 1, end_flappy_game
+		li $t2, 1
+		beq $v0, end_flappy_game
 		jal update_score
 		# jal timer_background_refresh
 		j loop_flappy_game

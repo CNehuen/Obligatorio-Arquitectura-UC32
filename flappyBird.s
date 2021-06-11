@@ -30,7 +30,7 @@ flappy_bird:
    beqz $v0, nueva_partida 
    j salir_flappy
    nueva_partida:
-   jal flappy_new_game
+	   jal flappy_new_game
 
    salir_flappy:
    # EPILOGO 
