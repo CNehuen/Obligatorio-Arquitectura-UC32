@@ -32,36 +32,36 @@ flappy_new_game:
 	bgt $t1, 12, start_circular_array
 	j load_circular_array
 	start_circular_array:
-	sb $zero, ($t0)
+		sb $zero, ($t0)
 	load_circular_array:
-	li $t1, 10
-	sb $t1, 1($t0)
-	li $t1, 40
-	sb $t1, 2($t0)
-	li $t1, 32
-	sb $t1, 3($t0)
-	li $t1, 3
-	sb $t1, 4($t0)
-	li $t1, 13
-	sb $t1, 5($t0)
-	li $t1, 21
-	sb $t1, 6($t0)
-	li $t1, 28
-	sb $t1, 7($t0)
-	li $t1, 8
-	sb $t1, 8($t0)
-	li $t1, 16
-	sb $t1, 9($t0)
-	li $t1, 24
-	sb $t1, 10($t0)
-	li $t1, 23
-	sb $t1, 11($t0)
-	li $t1, 36
-	sb $t1, 12($t0)	
+		li $t1, 10
+		sb $t1, 1($t0)
+		li $t1, 40
+		sb $t1, 2($t0)
+		li $t1, 32
+		sb $t1, 3($t0)
+		li $t1, 3
+		sb $t1, 4($t0)
+		li $t1, 13
+		sb $t1, 5($t0)
+		li $t1, 21
+		sb $t1, 6($t0)
+		li $t1, 28
+		sb $t1, 7($t0)
+		li $t1, 8
+		sb $t1, 8($t0)
+		li $t1, 16
+		sb $t1, 9($t0)
+		li $t1, 24
+		sb $t1, 10($t0)
+		li $t1, 23
+		sb $t1, 11($t0)
+		li $t1, 36
+		sb $t1, 12($t0)	
 	jal clean_screen
 	loop_flappy_game:
-		jal update_column # actualizo columnas y las creo si es necesario
-		jal update_bird	# actualizo la posicion del pajaro y verifico si choca contra la columna
+		jal update_column	# actualizo columnas y las creo si es necesario
+		jal update_bird		# actualizo la posicion del pajaro y verifico si choca contra la columna
 		jal perdio			# En caso de que choque, retorno por parametro un booleano True para notificar que se perdio y terminar la partida
 		beq $v0, 1, end_flappy_game
 		jal update_score

@@ -12,32 +12,32 @@
 .text
 
 flappy_bird:
-       # Se muestra el menu de la siguiente forma:
-       # Titulo: FLAPPY BIRD
-       # Opciones de menu:
-       # NUEVO JUEGO: comienza nueva partida
-       # RANKING: visualiza las mejores posicions del ranking
-       # SALIR: retorna al menu de seleccion de juego
+   # Se muestra el menu de la siguiente forma:
+   # Titulo: FLAPPY BIRD
+   # Opciones de menu:
+   # NUEVO JUEGO: comienza nueva partida
+   # RANKING: visualiza las mejores posicions del ranking
+   # SALIR: retorna al menu de seleccion de juego
 
-       # PROLOGO 
-       # Guardo $ra en sp para no perderlo
-       addi $sp, $sp, -4 
-       sw $ra, ($sp)
+   # PROLOGO 
+   # Guardo $ra en sp para no perderlo
+   addi $sp, $sp, -4 
+   sw $ra, ($sp)
 
-       jal clean_screen
-       li $a0, 1
-       jal menu # menu de juego
-       beqz $v0, nueva_partida 
-       j salir_flappy
-       nueva_partida:
-       jal flappy_new_game
+   jal clean_screen
+   li $a0, 1
+   jal menu # menu de juego
+   beqz $v0, nueva_partida 
+   j salir_flappy
+   nueva_partida:
+   jal flappy_new_game
 
-       salir_flappy:
-       # EPILOGO 
-       lw $ra , ($sp) 	
-       addi $sp, $sp, 4 
+   salir_flappy:
+   # EPILOGO 
+   lw $ra , ($sp) 	
+   addi $sp, $sp, 4 
 
-       jr $ra
+   jr $ra
 	           
 
 
