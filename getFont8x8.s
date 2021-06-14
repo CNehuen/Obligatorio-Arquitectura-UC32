@@ -8,79 +8,79 @@ getFont8x8:
 	li $t1, ' '
 	beq $a0, $t1, devuelvoEspacio
 	li $t1,  'A'
-	beq $a0, $t1 devuelvoA
+	beq $a0, $t1, devuelvoA
 	li $t1,  'B'
-	beq $a0, $t1 devuelvoB
+	beq $a0, $t1, devuelvoB
 	li $t1,  'C'
-	beq $a0, $t1 devuelvoC
+	beq $a0, $t1, devuelvoC
 	li $t1,  'D'
-	beq $a0, $t1 devuelvoD
+	beq $a0, $t1, devuelvoD
 	li $t1,  'E'
-	beq $a0, $t1 devuelvoE
+	beq $a0, $t1, devuelvoE
 	li $t1,  'F'
-	beq $a0, $t1 devuelvoF
+	beq $a0, $t1, devuelvoF
 	li $t1,  'G'
-	beq $a0, $t1 devuelvoG
+	beq $a0, $t1, devuelvoG
 	li $t1,  'H'
-	beq $a0, $t1 devuelvoH
+	beq $a0, $t1, devuelvoH
 	li $t1,  'I'
-	beq $a0, $t1 devuelvoI
+	beq $a0, $t1, devuelvoI
 	li $t1,  'J'
-	beq $a0, $t1 devuelvoJ
+	beq $a0, $t1, devuelvoJ
 	li $t1,  'K'
-	beq $a0, $t1 devuelvoK
+	beq $a0, $t1, devuelvoK
 	li $t1,  'L'
-	beq $a0, $t1 devuelvoL
+	beq $a0, $t1, devuelvoL
 	li $t1,  'M'
-	beq $a0, $t1 devuelvoM
+	beq $a0, $t1, devuelvoM
 	li $t1,  'N'
-	beq $a0, $t1 devuelvoN
+	beq $a0, $t1, devuelvoN
 	li $t1,  'O'
-	beq $a0, $t1 devuelvoO
+	beq $a0, $t1, devuelvoO
 	li $t1,  'P'
-	beq $a0, $t1 devuelvoP
+	beq $a0, $t1, devuelvoP
 	li $t1,  'Q'
-	beq $a0, $t1 devuelvoQ
+	beq $a0, $t1, devuelvoQ
 	li $t1,  'R'
-	beq $a0, $t1 devuelvoR
+	beq $a0, $t1, devuelvoR
 	li $t1,  'S'
-	beq $a0, $t1 devuelvoS
+	beq $a0, $t1, devuelvoS
 	li $t1,  'T'
-	beq $a0, $t1 devuelvoT
+	beq $a0, $t1, devuelvoT
 	li $t1,  'U'
-	beq $a0, $t1 devuelvoU
+	beq $a0, $t1, devuelvoU
 	li $t1,  'V'
-	beq $a0, $t1 devuelvoV
+	beq $a0, $t1, devuelvoV
 	li $t1,  'W'
-	beq $a0, $t1 devuelvoW
+	beq $a0, $t1, devuelvoW
 	li $t1,  'X'
-	beq $a0, $t1 devuelvoX
+	beq $a0, $t1, devuelvoX
 	li $t1,  'Y'
-	beq $a0, $t1 devuelvoY
+	beq $a0, $t1, devuelvoY
 	li $t1,  'Z'
-	beq $a0, $t1 devuelvoZ
+	beq $a0, $t1, devuelvoZ
 	li $t1,  ':'
-	beq $a0, $t1 devuelvoDosPuntos
+	beq $a0, $t1, devuelvoDosPuntos
 	li $t1,  '1'
-	beq $a0, $t1 devuelvo1
+	beq $a0, $t1, devuelvo1
 	li $t1,  '2'
-	beq $a0, $t1 devuelvo2
+	beq $a0, $t1, devuelvo2
 	li $t1,  '3'
-	beq $a0, $t1 devuelvo3
+	beq $a0, $t1, devuelvo3
 	li $t1,  '4'
-	beq $a0, $t1 devuelvo4
+	beq $a0, $t1, devuelvo4
 	li $t1,  '5'
-	beq $a0, $t1 devuelvo5
+	beq $a0, $t1, devuelvo5
 	li $t1,  '6'
-	beq $a0, $t1 devuelvo6
+	beq $a0, $t1, devuelvo6
 	li $t1,  '7'
-	beq $a0, $t1 devuelvo7
+	beq $a0, $t1, devuelvo7
 	li $t1,  '8'
-	beq $a0, $t1 devuelvo8
+	beq $a0, $t1, devuelvo8
 	li $t1,  '9'
-	beq $a0, $t1 devuelvo9
+	beq $a0, $t1, devuelvo9
 	li $t1,  'p'
-	beq $a0, $t1 devuelvoPajaro
+	beq $a0, $t1, devuelvoPajaro
 	j fin
 
 devuelvoEspacio:	

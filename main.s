@@ -4,6 +4,7 @@
 
 /*Version UC32*/
 .globl main
+.globl img
 .globl Int8x8 
 .globl bird8x8
 .globl font8x8
@@ -15,7 +16,7 @@
 .globl scores
 .data 
 .align 2
-/*la imagen desparece porque se manda la informacion directamente al display img: .space 32768 #espacio de memoria para la imagen */
+img: .space 8192 # ahora la imagen en vez de guardar de a un word/pixel, es 1 byte/pixel 
 font8x8: .space 8 
 bird8x8: .asciiz "p"  
 .align 2
@@ -27,6 +28,7 @@ coordenadaenY: .space 2
 limpiarPajaro: .asciiz " "
 scores: .space 1
 .text
+.ent main 
 main:
 	/*
 	CONFIGURACION DEL PIC
@@ -36,7 +38,13 @@ main:
 	*/
 	li $t0, 0xf
 	sw $t0, TRISF # Configuro puerto F como entrada para botones
-	
+	/*configuracion del SPI
+	SPIxCON: 0000 0000 0000 0000 1000 0010 0011 0000 -> 0x00008230
+	SPIxCON2: 0000 0000 0000 0000 0000 0011 0000 0000 -> 0x00000300
+	SPIxBRG:  
+	*/
+	li $t0, 0x00008230
+	sw $t0, SPI1CON
 	
 	li $a0, 0
 	li $v0,0
