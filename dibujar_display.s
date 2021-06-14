@@ -11,11 +11,6 @@ dibujar_display:
 	 - 
 	*/
 	la $t0, img
-	/*
-	Necesitamos un contador de columnas para las columnas dentro de la pagina,
-	un contador de pagina (para movernos entre pagina uso el resto de 
-	la division)*/
-	
 	li $t2, -1
 	loop_pagina:
 		addi $t2, $t2,1
@@ -34,7 +29,7 @@ dibujar_display:
 			loop_columna_pagina:
 				addi $t3, $t3, 1
 				li $t4, 8
-				beq $t3,$t4, loop_columnas_pagina
+				beq $t3,$t4, end_columna_pagina # cuando termino los 8 bits tengo que escribit el buffer
 				li $t4, 128
 				mul $t4, $t4, $t3
 				add $t0,$t0, $t4
@@ -44,7 +39,10 @@ dibujar_display:
 					or $t7, $t8, $t7
 				set_bit_negro:
 				sll $t8, $t8, 1
-				# cuando termino los 8 bits tengo que escribit el buffer
-	
+				j loop_columna_pagina
+				end_columna_pagina:
+					la $t4, SPI2BUF
+					sb $t7, ($t4)
+					j loop_columnas_pagina
 	end_loop_pagina:
-	
+	jr $ra
