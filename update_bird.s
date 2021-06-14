@@ -23,11 +23,11 @@ movimientoPajaro:
 
 
 	SubiendoPajaro: 					
-		sub $t2, $t2, 1 	# Sube 1 pixel 
+		addi $t2, $t2, -1 	# Sube 1 pixel 
 		la $a0, bird8x8     # Dibuja el pajaro
 		li $a1, 20 			# Posicion en x
 		addi $a2, $t2,0		# Nueva posicion en y 19 
-		sub $t3, $t3, 1     # Vuelvo mi boton a 0   
+		addi $t3, $t3, -1     # Vuelvo mi boton a 0   
 		sb $t3, 1($t1)  	# Lo guardo					   
 		sb $t2, ($t1)    	# Guardo mi nueva posicion actual 
 		jal dibujarString		# Dibujo el pajaro
@@ -41,7 +41,7 @@ movimientoPajaro:
 		la $a0, bird8x8
 		li $a1, 20 
 		addi $a2, $t2,0
-		sub $t3, $t3, 1 					
+		addi $t3, $t3, -1 					
 		bgez $t3, ContinuarBajando	
 		addi $t3, $t3, 1
 		ContinuarBajando:				

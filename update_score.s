@@ -15,7 +15,7 @@ update_score:
 	convertir_score:
 	# Debo convertir el int de score a string
 	la $a0, Int8x8
-	move $a1, $t3
+	add $a1, $t3, $zero
 	jal intToString
 	li $a1, 47
 	li $a2, 2
@@ -43,7 +43,7 @@ intToString:
 	loop_converter:
 		beqz $t1, end_converter
 		beqz $a1, end_converter
-		subi $t1, $t1, 1
+		addi $t1, $t1, -1
 		li $t0, 10
 		div $a1, $t0 
 		mflo $a1
@@ -55,7 +55,3 @@ intToString:
 		j loop_converter
 	end_converter:
 	jr $ra
-	
-	
-
-

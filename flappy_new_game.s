@@ -66,8 +66,9 @@ flappy_new_game:
 		jal update_bird		# actualizo la posicion del pajaro y verifico si choca contra la columna
 		jal perdio			# En caso de que choque, retorno por parametro un booleano True para notificar que se perdio y terminar la partida
 		li $t2, 1
-		beq $v0, end_flappy_game
+		beq $v0,$t2, end_flappy_game
 		jal update_score
+		jal dibujar_display
 		# jal timer_background_refresh
 		j loop_flappy_game
 		
