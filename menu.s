@@ -12,7 +12,6 @@ menu:
 	0 -> Menu principal de seleccion de juego
 	1-> Menu de juego*/
 
-
     /*Guardo $ra en sp para no perderlo*/
     addi $sp, $sp, -4 
     sw $ra, ($sp)
@@ -35,7 +34,6 @@ menu:
 		li $a2, 42
 		jal dibujarString
 		li $t9,3  # Cantidad de strings seleccionables
-		add $t8, $zero, $zero
 		j subrayar_string
 
     menu_principal:
@@ -52,7 +50,7 @@ menu:
 		li $a2, 32
 		jal dibujarString
 		li $t9,2  /*Cantidad de strings seleccionables*/
-		add $t8, $zero, $zero
+		
 
 	subrayar_string:
 	    # mulu $a1, $t8, 10  
@@ -62,6 +60,7 @@ menu:
 	    jal dibujar_subrayar /*subrayo el primer item*/
 	    # subi $t8, $t8, 1
 		jal dibujar_display
+		add $t8, $zero, $zero
 	loop_seleccion_menu:
 	    # verifico si presiona el boton de cambiar opcion o elegir opcion
 		la $t3, PORTF

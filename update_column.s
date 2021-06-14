@@ -14,41 +14,41 @@ li $t4, 2  # variable contador de columna para mover
 beqz $t3, create_first_columns
 # Desplazo la hilera de la derecha de las columnas hacia la izquierda de la columna
 loop_move_columns:
-la $t0, img
-addi $t4, $t4,-1
-li $t9, 64
-addu $t8, $t0, $t5  # me coloco en la pisicion de la derecha de la primra columna
-loop_move_column:
-   beqz $t9, end_move_columns
-   addi $t9,$t9,-1
-   sb $zero, ($t8)# limpio el pixel
-   li $t5, 10
-   sub $t5, $t2, $t5
-   bltz $t5, errase_column
-   addi $t8, $t8, -10  # me muevo hacia atras hacia donde debo pintar la columna
-   # verifico si debo pintar negro o blanco			
-   la $t3, column_heigh
-   addiu $t3,$t3,1
-   subu $t3,$t3,$t4 # calculo la coordenada en Y donde estoy parado
-   lb $t6, ($t3)
-   li $t5, 63
-   sub $t5, $t5,$t9  # posicion actual creciente
-   sub $t7, $t5,$t6
-   bltz $t7, loop_move_white
-   addiu $t6,$t6,20
-   sub $t7, $t5,$t6
-   bltz $t7,loop_move_black
-   loop_move_white:
-	   li $t7, 0xff
-	   sb $t7, ($t8)  # pinto el pixel 1 posicion a la izq de donde esta la columna, de blanco
-	   addiu $t8,$t8, 10 # me muevo a la posicion de la derecha de la columna
-	   j errase_column
-   loop_move_black:
-	   sb $zero, ($t8)  # pinto el pixel 1 posicion a la izq de donde esta la columna, de negro		
-	   addiu $t8,$t8, 10 # me muevo a la posicion de la derecha de la columna
-   errase_column:
-   addiu $t8,$t8, 128 # me muevo a la fila de abajo
-   j loop_move_column
+	la $t0, img
+	addi $t4, $t4,-1
+	li $t9, 64
+	addu $t8, $t0, $t5  # me coloco en la pisicion de la derecha de la primra columna
+	loop_move_column:
+	   beqz $t9, end_move_columns
+	   addi $t9,$t9,-1
+	   sb $zero, ($t8)# limpio el pixel
+	   li $t5, 10
+	   sub $t5, $t2, $t5
+	   bltz $t5, errase_column
+	   addi $t8, $t8, -10  # me muevo hacia atras hacia donde debo pintar la columna
+	   # verifico si debo pintar negro o blanco			
+	   la $t3, column_heigh
+	   addiu $t3,$t3,1
+	   subu $t3,$t3,$t4 # calculo la coordenada en Y donde estoy parado
+	   lb $t6, ($t3)
+	   li $t5, 63
+	   sub $t5, $t5,$t9  # posicion actual creciente
+	   sub $t7, $t5,$t6
+	   bltz $t7, loop_move_white
+	   addiu $t6,$t6,20
+	   sub $t7, $t5,$t6
+	   bltz $t7,loop_move_black
+	   loop_move_white:
+		   li $t7, 0xff
+		   sb $t7, ($t8)  # pinto el pixel 1 posicion a la izq de donde esta la columna, de blanco
+		   addiu $t8,$t8, 10 # me muevo a la posicion de la derecha de la columna
+		   j errase_column
+	   loop_move_black:
+		   sb $zero, ($t8)  # pinto el pixel 1 posicion a la izq de donde esta la columna, de negro		
+		   addiu $t8,$t8, 10 # me muevo a la posicion de la derecha de la columna
+	   errase_column:
+	   addiu $t8,$t8, 128 # me muevo a la fila de abajo
+	   j loop_move_column
 
  end_move_columns:
  addi $t2, $t2, -1

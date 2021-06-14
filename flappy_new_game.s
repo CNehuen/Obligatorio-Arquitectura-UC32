@@ -78,9 +78,5 @@ flappy_new_game:
 	
 	# EPILOGO
     lw $ra , ($sp) 	
-	addi $sp, $sp, 4 
-	
+	addi $sp, $sp, 4
 	jr $ra
-	
-
-

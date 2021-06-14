@@ -45,9 +45,6 @@ main:
 	*/
 	li $t0, 0x00008230
 	sw $t0, SPI1CON
-	li $t0, 0x00000300
-	sw $t0, SPI1CON
-	
 	
 	li $a0, 0
 	li $v0,0

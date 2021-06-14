@@ -49,10 +49,7 @@ movimientoPajaro:
 			sb $t2, ($t1)							
 			jal dibujarString		# Dibujo el pajaro
 			li $v0, 0
-
 		j finMovimientoPajaro
-
-
 
 	partidaPerdida: 
 		li $v0, 1
@@ -61,7 +58,6 @@ movimientoPajaro:
 	# EPILOGO
 	lw $ra , ($sp) 	
 	addi $sp, $sp, 4 
-
 	jr $ra	
 
 

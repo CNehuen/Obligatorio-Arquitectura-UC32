@@ -1,10 +1,6 @@
 .globl perdio
 
 perdio: 
-	# PROLOGO
-	# Guardo $ra en sp para no perderlo
-	addi $sp, $sp, -4 
-	sw $ra, ($sp)
 
 	la $t1, column_coord # Vector que tiene 3 posicions de columna
 	la $t0, img 		 # Cargo la imagen
