@@ -10,6 +10,10 @@ dibujar_display:
 	 Parametros:
 	 - 
 	*/
+	/*Guardo $ra en sp para no perderlo*/
+    addi $sp, $sp, -4 
+    sw $ra, ($sp)
+	
 	la $t0, img
 	li $t2, -1
 	addi $t0, $t0, -897
@@ -42,8 +46,11 @@ dibujar_display:
 				sll $t8, $t8, 1
 				j loop_columna_pagina
 				end_columna_pagina:
-					la $t4, SPI2BUF
-					sb $t7, ($t4)
+					add $a0, $t7, $zero
+					jal cargar_buffer
 					j loop_columnas_pagina
 	end_loop_pagina:
+	/*EPILOGO*/
+	lw $ra , ($sp) 	
+	addi $sp, $sp, 4 
 	jr $ra
