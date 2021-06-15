@@ -46,16 +46,17 @@ main:
 	li $t0, 0xE3
 	sw $t0, TRISF
 	/*
-	Dejo el pin RES en 0, espero un tiempo t> 3ms y lo pongo en 1 para que
+	 Secuencia de prendido del display
+	Dejo el pin RES en 0, espero un tiempo t> 3us y lo pongo en 1 para que
 	se inicie el display
 	*/
-	sw $zero, PORTF
+	sb $zero, PORTF
 	li $t0,0
 	li $t1, 100000
 	loop_enciendo_display 
 		addi $t0, $t0, 1
 		bne $t1, $t0,loop_enciendo_display
-	# dejo habilitado el pin DC para carga de datos
+	# dejo habilitado el pin RES para dejar encendido el display
 	# PORTF -> 0 0 0 0 0 1 0 0 
 	li $t0, 0x04
 	lb $t1, PORTF
@@ -81,7 +82,7 @@ main:
 	jal cargar_buffer
 	li $a0, 0x20  # Set Memory Addressing Mode
 	jal cargar_buffer
-	li $a0, 0x0 # set Horizontal addressing mode
+	li $a0, 0x00 # set Horizontal addressing mode
 	jal cargar_buffer
 	li $a0, 0xAF # set display ON
 	jal cargar_buffer
@@ -91,7 +92,7 @@ main:
 	li $t0, 0x08
 	lb $t1, PORTF
 	or $t0, $t0,$t1
-	sb $t0, PORTF 
+	sb $t0, PORTF
 	
 	# inicio la logica de la consola de juegos
 	li $a0, 0
