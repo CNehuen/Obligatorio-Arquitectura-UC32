@@ -65,11 +65,13 @@ menu:
 	    # verifico si presiona el boton de cambiar opcion o elegir opcion
 		la $t3, PORTF
 		lb $t4, ($t3)
+		
 		beqz $t4, loop_seleccion_menu
 		li $t5,  2
 		sub $t5, $t4,$t5
 		bgez $t5, boton_enter
-	    mul $a1, $t8, 10  
+	    
+		mul $a1, $t8, 10  
 	    addiu $a1, $a1, 30
 	    li $a0, 2
 	    li $a2, 0x00
