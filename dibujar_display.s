@@ -48,15 +48,16 @@ dibujar_display:
 				end_columna_pagina:
 					add $a0, $t7, $zero
 					jal cargar_buffer
+					li $t0, 0
+					li $t1, 150000
+					wait1:
+					addi $t0, $t0, 1
+					bne $t0, $t1, wait1
 					j loop_columnas_pagina
 	end_loop_pagina:
 	/*EPILOGO*/
 	# wait 4 ms
-   li $t0, 0
-   li $t1, 15000000
-   wait1:
-	addi $t0, $t0, 1
-   bne $t0, $t1, wait1
+   
 	lw $ra , ($sp) 	
 	addi $sp, $sp, 4 
 	jr $ra

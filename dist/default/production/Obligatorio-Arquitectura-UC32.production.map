@@ -1,107 +1,107 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o (_bootstrap_exception_handler)
+                              C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o (_bootstrap_exception_handler)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o (_on_reset)
+                              C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o (_on_reset)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o (_on_bootstrap)
+                              C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o (_on_bootstrap)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o (_nmi_handler)
+                              C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o (_nmi_handler)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o (__pic32_data_init)
+                              C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o (__pic32_data_init)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o (_general_exception_context)
+                              C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o (_general_exception_context)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector0.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_0)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_0)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector1.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_1)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_1)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector2.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_2)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_2)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector3.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_3)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_3)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector4.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_4)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_4)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector5.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_5)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_5)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector6.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_6)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_6)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector7.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_7)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_7)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector8.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_8)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_8)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector9.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_9)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_9)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector10.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_10)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_10)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector11.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_11)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_11)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector12.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_12)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_12)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector13.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_13)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_13)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector14.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_14)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_14)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector15.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_15)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_15)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector16.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_16)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_16)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector17.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_17)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_17)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector18.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_18)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_18)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector19.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_19)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_19)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector20.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_20)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_20)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector21.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_21)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_21)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector22.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_22)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_22)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector23.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_23)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_23)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector24.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_24)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_24)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector25.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_25)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_25)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector26.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_26)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_26)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector27.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_27)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_27)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector28.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_28)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_28)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector29.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_29)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_29)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector30.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_30)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_30)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector31.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_31)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_31)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector32.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_32)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_32)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector33.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_33)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_33)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector34.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_34)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_34)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector35.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_35)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_35)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector36.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_36)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_36)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector37.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_37)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_37)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector38.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_38)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_38)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector39.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_39)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_39)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector40.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_40)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_40)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector41.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_41)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_41)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector42.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_42)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_42)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector43.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_43)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_43)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(vector44.o)
-                              C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o (__vector_dispatch_44)
+                              C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o (__vector_dispatch_44)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
                               c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o) (_general_exception_handler)
 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
@@ -118,26 +118,26 @@ section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
 .dinit                  0x9d000000         0x20a0        8352   
 .text                   0x9d0020a0          0xf14        3860  App's exec code 
-.text                   0x9d002fb4          0x2cc         716  App's exec code 
-.text                   0x9d003280          0x11c         284  App's exec code 
-.text.general_exception 0x9d00339c           0xdc         220   
-.text                   0x9d003478          0x198         408  App's exec code 
-.text                   0x9d003610          0x18c         396  App's exec code 
-.text                   0x9d00379c          0x13c         316  App's exec code 
-.text                   0x9d0038d8           0x58          88  App's exec code 
-.text.main_entry        0x9d003930           0x54          84   
-.text                   0x9d003984           0x48          72  App's exec code 
-.text._bootstrap_except 0x9d0039cc           0x48          72   
-.text._general_exceptio 0x9d003a14           0x48          72   
-.vector_default         0x9d003a5c           0x48          72   
-.text                   0x9d003aa4           0x80         128  App's exec code 
-.text                   0x9d003b24           0x5c          92  App's exec code 
-.MIPS.abiflags          0x9d003b80           0x18          24   
-.text                   0x9d003b98           0x20          32  App's exec code 
-.text                   0x9d003bb8            0x8           8  App's exec code 
-.text._on_reset         0x9d003bc0            0x8           8   
-.text._on_bootstrap     0x9d003bc8            0x8           8   
-      Total kseg0_program_mem used  :      0x3bd0       15312  2.9% of 0x80000
+.text                   0x9d002fb4          0x2d4         724  App's exec code 
+.text                   0x9d003288          0x11c         284  App's exec code 
+.text.general_exception 0x9d0033a4           0xdc         220   
+.text                   0x9d003480          0x198         408  App's exec code 
+.text                   0x9d003618          0x18c         396  App's exec code 
+.text                   0x9d0037a4          0x13c         316  App's exec code 
+.text                   0x9d0038e0           0x58          88  App's exec code 
+.text.main_entry        0x9d003938           0x54          84   
+.text                   0x9d00398c           0x48          72  App's exec code 
+.text._bootstrap_except 0x9d0039d4           0x48          72   
+.text._general_exceptio 0x9d003a1c           0x48          72   
+.vector_default         0x9d003a64           0x48          72   
+.text                   0x9d003aac           0x80         128  App's exec code 
+.text                   0x9d003b2c           0x5c          92  App's exec code 
+.MIPS.abiflags          0x9d003b88           0x18          24   
+.text                   0x9d003ba0           0x20          32  App's exec code 
+.text                   0x9d003bc0            0x8           8  App's exec code 
+.text._on_reset         0x9d003bc8            0x8           8   
+.text._on_bootstrap     0x9d003bd0            0x8           8   
+      Total kseg0_program_mem used  :      0x3bd8       15320  2.9% of 0x80000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -202,7 +202,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x1ac         428  36.6% of 0x490
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x3ef4       16116  3.0% of 0x81e00
+         Total Program Memory used  :      0x3efc       16124  3.0% of 0x81e00
         --------------------------------------------------------------------------
 
 
@@ -282,16 +282,16 @@ Discarded input sections
  .reginfo       0x0000000000000000       0x18 build/default/production/clock_configurtions.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 build/default/production/clock_configurtions.o
- .reginfo       0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
- .reginfo       0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
+                0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
- .reginfo       0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+                0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
+ .reginfo       0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
  .MIPS.abiflags
-                0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
- .discard       0x0000000000000000       0xb4 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+                0x0000000000000000       0x18 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
+ .discard       0x0000000000000000       0xb4 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
  .reginfo       0x0000000000000000       0x18 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .MIPS.abiflags
                 0x0000000000000000       0x18 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
@@ -709,9 +709,9 @@ LOAD build/default/production/dibujar_display.o
 LOAD build/default/production/cargar_buffer.o
 LOAD build/default/production/clock_configurtions.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
-LOAD C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
-LOAD C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
-LOAD C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+LOAD C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
+LOAD C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
+LOAD C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
 LOAD c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 LOAD c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1\libgcc.a
 START GROUP
@@ -767,16 +767,16 @@ END GROUP
 
 .reset          0x00000000bfc00000      0x19c
  *(.reset)
- .reset         0x00000000bfc00000        0x8 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .reset         0x00000000bfc00000        0x8 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
                 0x00000000bfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0x00000000bfc00008      0x194 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+                0x00000000bfc00008      0x194 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
                 0x00000000bfc00008                _startup
 
 .bev_excpt      0x00000000bfc00380       0x10
  *(.bev_handler)
- .bev_handler   0x00000000bfc00380       0x10 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .bev_handler   0x00000000bfc00380       0x10 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
 
 .dbg_excpt      0x00000000bfc00480        0x0
                 0x00000000bfc00480                . = (. + DEFINED (_DEBUGGER)?0x8:0x0)
@@ -786,7 +786,7 @@ END GROUP
 
 .app_excpt      0x000000009fc01180       0x10
  *(.gen_handler)
- .gen_handler   0x000000009fc01180       0x10 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .gen_handler   0x000000009fc01180       0x10 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
 
 .vector_0       0x000000009fc01200        0x8
  *(.vector_0)
@@ -1481,31 +1481,31 @@ END GROUP
  .debug_abbrev  0x000000000000038f       0x31 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
  .debug_abbrev  0x00000000000003c0       0x31 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
-.debug_line     0x0000000000000000      0xe54
+.debug_line     0x0000000000000000      0xe59
  *.elf(.debug_line)
  *(.debug_line)
- .debug_line    0x0000000000000000       0x6f build/default/production/main.o
- .debug_line    0x000000000000006f       0x3f build/default/production/newAsmTemplate.o
- .debug_line    0x00000000000000ae       0x46 build/default/production/flappyBird.o
- .debug_line    0x00000000000000f4       0x63 build/default/production/update_bird.o
- .debug_line    0x0000000000000157       0xd1 build/default/production/update_column.o
- .debug_line    0x0000000000000228       0x51 build/default/production/columnasVerticales.o
- .debug_line    0x0000000000000279       0x5f build/default/production/update_score.o
- .debug_line    0x00000000000002d8      0x31f build/default/production/getFont8x8.o
- .debug_line    0x00000000000005f7       0x79 build/default/production/flappy_new_game.o
- .debug_line    0x0000000000000670       0x69 build/default/production/dibujarString.o
- .debug_line    0x00000000000006d9       0x5c build/default/production/perdio.o
- .debug_line    0x0000000000000735       0x44 build/default/production/clean_screen.o
- .debug_line    0x0000000000000779       0x8b build/default/production/menu.o
- .debug_line    0x0000000000000804       0x3b build/default/production/creoArchivo.o
- .debug_line    0x000000000000083f       0x66 build/default/production/dibujar_display.o
- .debug_line    0x00000000000008a5       0x44 build/default/production/cargar_buffer.o
- .debug_line    0x00000000000008e9      0x1c0 build/default/production/clock_configurtions.o
- .debug_line    0x0000000000000aa9       0xca c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000000000000b73       0xa6 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
- .debug_line    0x0000000000000c19       0xaa c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x0000000000000cc3       0xc8 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
- .debug_line    0x0000000000000d8b       0xc9 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x0000000000000000       0x73 build/default/production/main.o
+ .debug_line    0x0000000000000073       0x3f build/default/production/newAsmTemplate.o
+ .debug_line    0x00000000000000b2       0x46 build/default/production/flappyBird.o
+ .debug_line    0x00000000000000f8       0x63 build/default/production/update_bird.o
+ .debug_line    0x000000000000015b       0xd1 build/default/production/update_column.o
+ .debug_line    0x000000000000022c       0x51 build/default/production/columnasVerticales.o
+ .debug_line    0x000000000000027d       0x5f build/default/production/update_score.o
+ .debug_line    0x00000000000002dc      0x31f build/default/production/getFont8x8.o
+ .debug_line    0x00000000000005fb       0x79 build/default/production/flappy_new_game.o
+ .debug_line    0x0000000000000674       0x69 build/default/production/dibujarString.o
+ .debug_line    0x00000000000006dd       0x5c build/default/production/perdio.o
+ .debug_line    0x0000000000000739       0x44 build/default/production/clean_screen.o
+ .debug_line    0x000000000000077d       0x8c build/default/production/menu.o
+ .debug_line    0x0000000000000809       0x3b build/default/production/creoArchivo.o
+ .debug_line    0x0000000000000844       0x66 build/default/production/dibujar_display.o
+ .debug_line    0x00000000000008aa       0x44 build/default/production/cargar_buffer.o
+ .debug_line    0x00000000000008ee      0x1c0 build/default/production/clock_configurtions.o
+ .debug_line    0x0000000000000aae       0xca c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x0000000000000b78       0xa6 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+ .debug_line    0x0000000000000c1e       0xaa c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x0000000000000cc8       0xc8 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+ .debug_line    0x0000000000000d90       0xc9 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
 
 .debug_frame    0x0000000000000000      0x108
  *.elf(.debug_frame)
@@ -1622,11 +1622,11 @@ END GROUP
  .gnu.attributes
                 0x0000000000000110       0x10 build/default/production/clock_configurtions.o
  .gnu.attributes
-                0x0000000000000120       0x10 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+                0x0000000000000120       0x10 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
  .gnu.attributes
-                0x0000000000000130       0x10 C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
+                0x0000000000000130       0x10 C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
  .gnu.attributes
-                0x0000000000000140       0x10 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+                0x0000000000000140       0x10 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
  .gnu.attributes
                 0x0000000000000150       0x10 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
  .gnu.attributes
@@ -2084,22 +2084,22 @@ LOAD data_init
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
 
 .bss%z109       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+ .bss           0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
 
 .data%z110      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+ .data          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
 
 .bss%z111       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
+ .bss           0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
 
 .data%z112      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
+ .data          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
 
 .bss%z113       0x0000000000000000        0x0
- .bss           0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .bss           0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
 
 .data%z114      0x0000000000000000        0x0
- .data          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .data          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
 
 .bss%z115       0x0000000000000000        0x0
  .bss           0x0000000000000000        0x0 build/default/production/clock_configurtions.o
@@ -2218,108 +2218,108 @@ LOAD data_init
  .text          0x000000009d002cdc      0x2d8 build/default/production/update_column.o
                 0x000000009d002cdc                update_column
 
-.text           0x000000009d002fb4      0x2cc
- .text          0x000000009d002fb4      0x1ac build/default/production/menu.o
+.text           0x000000009d002fb4      0x2d4
+ .text          0x000000009d002fb4      0x1b8 build/default/production/menu.o
                 0x000000009d002fb4                menu
- .text          0x000000009d003160      0x120 build/default/production/main.o
-                0x000000009d003160                main
+ .text          0x000000009d00316c      0x11c build/default/production/main.o
+                0x000000009d00316c                main
 
-.text           0x000000009d003280      0x11c
- .text          0x000000009d003280      0x11c build/default/production/flappy_new_game.o
-                0x000000009d003280                flappy_new_game
+.text           0x000000009d003288      0x11c
+ .text          0x000000009d003288      0x11c build/default/production/flappy_new_game.o
+                0x000000009d003288                flappy_new_game
 
 .text.general_exception
-                0x000000009d00339c       0xdc
+                0x000000009d0033a4       0xdc
  .text.general_exception
-                0x000000009d00339c       0xdc c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
-                0x000000009d00339c                _general_exception_context
+                0x000000009d0033a4       0xdc c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(general-exception.o)
+                0x000000009d0033a4                _general_exception_context
 
-.text           0x000000009d003478      0x198
- .text          0x000000009d003478       0xcc build/default/production/update_bird.o
-                0x000000009d003478                update_bird
- .text          0x000000009d003544       0xcc build/default/production/update_score.o
-                0x000000009d003544                update_score
+.text           0x000000009d003480      0x198
+ .text          0x000000009d003480       0xcc build/default/production/update_bird.o
+                0x000000009d003480                update_bird
+ .text          0x000000009d00354c       0xcc build/default/production/update_score.o
+                0x000000009d00354c                update_score
 
-.text           0x000000009d003610      0x18c
- .text          0x000000009d003610       0xc8 build/default/production/dibujarString.o
-                0x000000009d003610                dibujarString
- .text          0x000000009d0036d8       0xc4 build/default/production/perdio.o
-                0x000000009d0036d8                perdio
+.text           0x000000009d003618      0x18c
+ .text          0x000000009d003618       0xc8 build/default/production/dibujarString.o
+                0x000000009d003618                dibujarString
+ .text          0x000000009d0036e0       0xc4 build/default/production/perdio.o
+                0x000000009d0036e0                perdio
 
-.text           0x000000009d00379c      0x13c
- .text          0x000000009d00379c       0xb8 build/default/production/dibujar_display.o
-                0x000000009d00379c                dibujar_display
- .text          0x000000009d003854       0x84 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
-                0x000000009d003854                __pic32_data_init
+.text           0x000000009d0037a4      0x13c
+ .text          0x000000009d0037a4       0xb8 build/default/production/dibujar_display.o
+                0x000000009d0037a4                dibujar_display
+ .text          0x000000009d00385c       0x84 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(pic32_data_init.o)
+                0x000000009d00385c                __pic32_data_init
 
-.text           0x000000009d0038d8       0x58
- .text          0x000000009d0038d8       0x58 build/default/production/clock_configurtions.o
-                0x000000009d003904                ExampleInterfaceFunction
+.text           0x000000009d0038e0       0x58
+ .text          0x000000009d0038e0       0x58 build/default/production/clock_configurtions.o
+                0x000000009d00390c                ExampleInterfaceFunction
 
 .text.main_entry
-                0x000000009d003930       0x54
+                0x000000009d003938       0x54
  .text.main_entry
-                0x000000009d003930       0x54 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
-                0x000000009d003964                __crt0_exit
+                0x000000009d003938       0x54 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
+                0x000000009d00396c                __crt0_exit
 
-.text           0x000000009d003984       0x48
- .text          0x000000009d003984       0x48 build/default/production/columnasVerticales.o
-                0x000000009d003984                ColumnasVerticales
+.text           0x000000009d00398c       0x48
+ .text          0x000000009d00398c       0x48 build/default/production/columnasVerticales.o
+                0x000000009d00398c                ColumnasVerticales
 
 .text._bootstrap_exception_handler
-                0x000000009d0039cc       0x48
+                0x000000009d0039d4       0x48
  .text._bootstrap_exception_handler
-                0x000000009d0039cc       0x48 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
-                0x000000009d0039cc                _bootstrap_exception_handler
+                0x000000009d0039d4       0x48 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
+                0x000000009d0039d4                _bootstrap_exception_handler
 
 .text._general_exception_handler
-                0x000000009d003a14       0x48
+                0x000000009d003a1c       0x48
  .text._general_exception_handler
-                0x000000009d003a14       0x48 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
-                0x000000009d003a14                _general_exception_handler
+                0x000000009d003a1c       0x48 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-general-exception-handler.o)
+                0x000000009d003a1c                _general_exception_handler
 
 .vector_default
-                0x000000009d003a5c       0x48
+                0x000000009d003a64       0x48
  .vector_default
-                0x000000009d003a5c       0x48 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
-                0x000000009d003a5c                _DefaultInterrupt
+                0x000000009d003a64       0x48 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
+                0x000000009d003a64                _DefaultInterrupt
 
-.text           0x000000009d003aa4       0x80
- .text          0x000000009d003aa4       0x44 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
-                0x000000009d003aa4                __pic32_software_reset
- .text          0x000000009d003ae8       0x3c build/default/production/flappyBird.o
-                0x000000009d003ae8                flappy_bird
+.text           0x000000009d003aac       0x80
+ .text          0x000000009d003aac       0x44 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\pic32_software_reset.o
+                0x000000009d003aac                __pic32_software_reset
+ .text          0x000000009d003af0       0x3c build/default/production/flappyBird.o
+                0x000000009d003af0                flappy_bird
 
-.text           0x000000009d003b24       0x5c
- .text          0x000000009d003b24       0x30 build/default/production/clean_screen.o
-                0x000000009d003b24                clean_screen
- .text          0x000000009d003b54       0x2c build/default/production/cargar_buffer.o
-                0x000000009d003b54                cargar_buffer
+.text           0x000000009d003b2c       0x5c
+ .text          0x000000009d003b2c       0x30 build/default/production/clean_screen.o
+                0x000000009d003b2c                clean_screen
+ .text          0x000000009d003b5c       0x2c build/default/production/cargar_buffer.o
+                0x000000009d003b5c                cargar_buffer
 
-.MIPS.abiflags  0x000000009d003b80       0x18
+.MIPS.abiflags  0x000000009d003b88       0x18
  .MIPS.abiflags
-                0x000000009d003b80       0x18 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\debug-exception-return.o
+                0x000000009d003b88       0x18 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\debug-exception-return.o
 
-.text           0x000000009d003b98       0x20
- .text          0x000000009d003b98       0x18 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
-                0x000000009d003b98                _nmi_handler
- .text          0x000000009d003bb0        0x8 build/default/production/newAsmTemplate.o
-                0x000000009d003bb0                newAsmTemplate
+.text           0x000000009d003ba0       0x20
+ .text          0x000000009d003ba0       0x18 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-nmi-handler.o)
+                0x000000009d003ba0                _nmi_handler
+ .text          0x000000009d003bb8        0x8 build/default/production/newAsmTemplate.o
+                0x000000009d003bb8                newAsmTemplate
 
-.text           0x000000009d003bb8        0x8
- .text          0x000000009d003bb8        0x8 build/default/production/creoArchivo.o
+.text           0x000000009d003bc0        0x8
+ .text          0x000000009d003bc0        0x8 build/default/production/creoArchivo.o
 
 .text._on_reset
-                0x000000009d003bc0        0x8
+                0x000000009d003bc8        0x8
  .text._on_reset
-                0x000000009d003bc0        0x8 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
-                0x000000009d003bc0                _on_reset
+                0x000000009d003bc8        0x8 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-reset.o)
+                0x000000009d003bc8                _on_reset
 
 .text._on_bootstrap
-                0x000000009d003bc8        0x8
+                0x000000009d003bd0        0x8
  .text._on_bootstrap
-                0x000000009d003bc8        0x8 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
-                0x000000009d003bc8                _on_bootstrap
+                0x000000009d003bd0        0x8 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-on-bootstrap.o)
+                0x000000009d003bd0                _on_bootstrap
 
 .text%z149      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(defaultinterrupt.o)
@@ -2475,13 +2475,13 @@ LOAD data_init
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\libpic32.a(default-bootstrap-exception-handler.o)
 
 .text%z200      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccVKgJ1z.o
+ .text          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccqk3nY9.o
 
 .text%z201      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccnTOEfC.o
+ .text          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccbJoEs5.o
 
 .text%z202      0x0000000000000000        0x0
- .text          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccbBDCz3.o
+ .text          0x0000000000000000        0x0 C:\Users\agus_\AppData\Local\Temp\ccrJTDem.o
 
 .text%z203      0x0000000000000000        0x0
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v3.01/bin/bin/../../lib/gcc/pic32mx/8.3.1/../../../../pic32mx/lib\debug-exception-return.o

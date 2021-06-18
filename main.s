@@ -50,18 +50,15 @@ main:
 	 RF3-> DC del display
 	*/
 	# li $t0, 0xF3
-		la $t1, TRISF
-
-	sw $zero, ($t1)
+	la $t1, TRISF
+	li $t0, 0xFF
+	sw $t0, ($t1)
 	/*
 	 Secuencia de prendido del display
 	Dejo el pin RES en 0, espero un tiempo t> 3us y lo pongo en 1 para que
 	se inicie el display
 	*/
-		la $t1, PORTF
-
-	sb $zero, ($t1)
-	li $t0,0
+		
 	
    # pin RES es output
    # defino puertos D, E, G como output (pin 26 (puertoE) = D/C#, pin 27 = RES)
@@ -75,6 +72,7 @@ main:
    sw $t1, ($t0)
    
 	li $t1, 150000
+	li $t0, 0 
 	loop_enciendo_display: 
 		addi $t0, $t0, 1
 		bne $t1, $t0,loop_enciendo_display
@@ -95,10 +93,11 @@ main:
 	SPIxCON: 0000 0000 0000 0000 1000 0010 0011 0000 -> 0x00008230
 	SPIxBRG:  0x00
 	*/
-		la $t1, SPI2CON
+	la $t1, SPI2CON
 
 	li $t0, 0x00008060 # habilito el bit ON
 	sw $t0, ($t1)
+	
 	
 	# El pin DC esta seteado en 0
 	# envio comandos para configurar el display
@@ -112,38 +111,43 @@ main:
 	jal cargar_buffer
 	li $a0, 0x00 # set Horizontal addressing mode
 	jal cargar_buffer
-	
+	li $a0, 0xA5
+	jal cargar_buffer
 	
 	# dejo habilitado el pin DC para carga de datos
 	# PORTF -> 0 0 0 0 1 0 0 0 
-	li $t0, 0x08
-	lb $t1, PORTF
-	or $t0, $t0,$t1
-	sb $t0, PORTF
+	
 	
 	
 	# seteo D/C# como 1 para mandar datos para pintar
    la $t0, PORTE
    li $t1, 0xFF
    sw $t1, ($t0)
+   
+   li $t0, 0
+					li $t1, 0xffffffff
+					wait2:
+					addi $t0, $t0, 1
+					bne $t0, $t1, wait2
    looooop:
-	   li $a0, 'A'
+	   li $a0, 'J'
 	   jal getFont8x8
 	   la $t0, font8x8
 	   lb $a0, ($t0)
-	   li $t0, 0
+	   
 	   jal cargar_buffer
-	   li $t2, 150000
+	   li $t2, 0xffffffff
+	   li $t0, 0
 	loop_enciendo: 
 		addi $t0, $t0, 1
 		bne $t2, $t0,loop_enciendo
    j looooop
-   /*
+   
 	# inicio la logica de la consola de juegos
 	li $a0, 0
-	li $v0,0
-	jal menu # menu de seleccion de juego
-	beqz $v0,inicio_flappy_bird
+	# li $v0,0
+	# jal menu # menu de seleccion de juego
+	/*beqz $v0,inicio_flappy_bird
 	li $t1,1
 	beq $v0, $t1, inicio_otro_juego
 	

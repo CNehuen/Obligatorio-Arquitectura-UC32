@@ -53,7 +53,7 @@ menu:
 		
 
 	subrayar_string:
-	    # mulu $a1, $t8, 10  
+	    mul $a1, $t8, 10  
 	    addiu $a1, $a1, 30
 	    li $a0, 2
 	    li $a2, 0xff
