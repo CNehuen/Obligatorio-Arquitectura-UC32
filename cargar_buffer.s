@@ -17,8 +17,3 @@ cargar_buffer:
 		sb $a0, ($t0) # cuando se vacia el buffer le cargo un nuevo byte
 	jr $ra
 
-	/*
-	1 0 1 1 0 0 1 0
-	0 0 0 0 1 0 0 0
-OR= 1 0 1 1 1 0 1 0
-	*/

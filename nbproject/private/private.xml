@@ -3,11 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/dibujar_display.s</file>
-            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/main.s</file>
-            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/cargar_buffer.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/update_bird.s</file>
             <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/clock_configurtions.c</file>
             <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/menu.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/clean_screen.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/flappyBird.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/dibujar_display.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/main.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/perdio.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/columnasVerticales.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/cargar_buffer.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/creoArchivo.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/flappy_new_game.s</file>
+            <file>file:/C:/Users/agus_/OneDrive/Escritorio/Obligatorio-Arquitectura-UC32/newAsmTemplate.s</file>
         </group>
     </open-files>
 </project-private>
