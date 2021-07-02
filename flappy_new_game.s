@@ -65,18 +65,23 @@ flappy_new_game:
 		jal update_column	# actualizo columnas y las creo si es necesario
 		jal update_bird		# actualizo la posicion del pajaro y verifico si choca contra la columna
 		jal perdio			# En caso de que choque, retorno por parametro un booleano True para notificar que se perdio y terminar la partida
-		li $t2, 1
 		beq $v0,$t2, end_flappy_game
 		jal update_score
 		jal dibujar_display
-		# jal timer_background_refresh
 		j loop_flappy_game
 		
 	end_flappy_game:
-	# jal show_your_score  #muestro en pantalla el puntaje obtenido en el juego por X segundos antes de retornar al menu de juego
-	# almaceno el score en el ranking si corresponde
+	# 1,5 seg
+	jal clean_screen
+	jal update_score
 	
+	la $a0, your_score
+	li $a1, 23
+	li $a2, 30
+	jal dibujarString
+	# 5 seg
 	# EPILOGO
+	li $v0,1
     lw $ra , ($sp) 	
 	addi $sp, $sp, 4
 	jr $ra

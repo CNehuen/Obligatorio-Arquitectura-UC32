@@ -1,5 +1,5 @@
 .globl update_score
-
+.globl intToString
 update_score:
 	# Coordenadas del string del puntaje : [x($a1) = 47 ; y($a2) = 2]
 	# PROLOGO 	
