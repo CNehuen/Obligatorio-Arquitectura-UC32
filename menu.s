@@ -1,4 +1,5 @@
 .globl menu
+.globl dibujar_subrayar
 .data
 MenuPrincipal: .asciiz "MENU PRINCIPAL"
 StringRacing: .asciiz "CAR RACING"
@@ -101,7 +102,7 @@ menu:
 	    li $a0, 2
 	    li $a2, 0xff
 	    jal dibujar_subrayar /*subrayo el item de menu actual*/
-	    jal dibujar_display
+	    /*jal dibujar_display*/
 		j loop_seleccion_menu
 	    renuevo_t8:
 		    add $t8,$zero, $zero
@@ -136,11 +137,12 @@ dibujar_subrayar:
 		sb $a2, ($t0)		/*pinto el rectangulo*/
 		li $t6, 1
 		sub $t2,$t2,$t6
+		sub $t1, $t1,$t6
 		addiu $t0,$t0,1
 		j loop_subrayar
     salir_subrayar:	
 	li $t6, 1
-    sub $t1, $t1,$t6
+    
     li $t2, 112
     addiu $t0, $t0, 16  /*avanzo para quedar al principio del subrayar, 1 pixel debajo*/
     beq $t1, $t6, loop_subrayar

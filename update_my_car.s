@@ -17,12 +17,12 @@ update_my_car:
  			 	j BajarAuto  		 	
  			 	
 				movimientoAuto:					
-				la $t1, control2
-				lw $t2, ($t1)
+				/*la $t1, control2
+				lw $t2, ($t1)*/
 				andi $t2 , $t2, 0x01
 				beqz $t2, finMovimientoAuto
-				la $t1, data2  
-				lw $s2, ($t1) # 0x00 00 00 00			
+				/*la $t1, data2  
+				lw $s2, ($t1) */# 0x00 00 00 00			
 				# beq $s2, 'w', limpio_mi_posicion
 				# beq $s2, 's', limpio_mi_posicion									  						  
 				j finMovimientoAuto

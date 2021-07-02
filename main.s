@@ -128,12 +128,8 @@ main:
    li $t1, 0xFF
    sw $t1, ($t0)
    
-   li $t0, 0
-					li $t1, 0xffffffff
-					wait2:
-					addi $t0, $t0, 1
-					bne $t0, $t1, wait2
-   looooop:
+   
+   /*looooop:
 	   li $a0, 'J'
 	   jal getFont8x8
 	   la $t0, font8x8
@@ -145,7 +141,7 @@ main:
 	loop_enciendo: 
 		addi $t0, $t0, 1
 		bne $t2, $t0,loop_enciendo
-   j looooop
+   j looooop*/
    main_loop:
 	# inicio la logica de la consola de juegos
 	# jal clean_screen
