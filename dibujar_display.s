@@ -16,28 +16,29 @@ dibujar_display:
 	
 	la $t0, img
 	li $t2, -1
-	addi $t0, $t0, -897
 	loop_pagina:
 		addi $t2, $t2,1
 		li $t1, 8
 		beq $t2,$t1, end_loop_pagina
-		addi $t0, $t0, 1
-		li $t1, 128
-		addi $t0, $t0, 897
+		li $t7, 1024
+		mul $t7, $t2,$t7
+		addu $t7, $t0, $t7 # me paro al inicio de cada pagina
+		li $t1, -1
 		loop_columnas_pagina:
-			addi $t1, $t1, -1
-			beqz $t1, loop_pagina
+			addi $t1, $t1, 1
+			li $s1, 128
+			beq $t1,$s1, loop_pagina
 			li $t3,-1
 			li $t8, 0x01
-			li $t7, 0
-			addi $t0, $t0, 1
+			addu $s0, $t7, $t1  # me paro al inicio de cada columna
+			li $t7,0
 			loop_columna_pagina:
 				addi $t3, $t3, 1
 				li $t4, 8
 				beq $t3,$t4, end_columna_pagina # cuando termino los 8 bits tengo que escribit el buffer
 				li $t4, 128
 				mul $t4, $t4, $t3
-				add $t4,$t0, $t4
+				add $t4,$s0, $t4
 				lb $t9, ($t4)
 				beqz $t9, set_bit_negro
 					# set_bit_blanco
@@ -48,16 +49,11 @@ dibujar_display:
 				end_columna_pagina:
 					add $a0, $t7, $zero
 					jal cargar_buffer
-					li $t0, 0
-					li $t1, 150000
-					wait1:
-					addi $t0, $t0, 1
-					bne $t0, $t1, wait1
 					j loop_columnas_pagina
 	end_loop_pagina:
 	/*EPILOGO*/
 	# wait 4 ms
-   
+	
 	lw $ra , ($sp) 	
 	addi $sp, $sp, 4 
 	jr $ra
