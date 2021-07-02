@@ -29,6 +29,13 @@
       <itemPath>dibujar_display.s</itemPath>
       <itemPath>cargar_buffer.s</itemPath>
       <itemPath>clock_configurtions.c</itemPath>
+      <itemPath>menu_de_juego.s</itemPath>
+      <itemPath>car_new_game.s</itemPath>
+      <itemPath>dibujar_auto.s</itemPath>
+      <itemPath>update_cars.s</itemPath>
+      <itemPath>update_my_car.s</itemPath>
+      <itemPath>print_score.s</itemPath>
+      <itemPath>perdioAuto.s</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

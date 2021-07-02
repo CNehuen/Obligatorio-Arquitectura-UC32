@@ -12,8 +12,14 @@
 .globl column_heigh
 .globl pseudorandom_values
 .globl limpiarPajaro
+.globl limpiarAuto
 .globl coordenadaenY
 .globl scores
+.globl your_score
+.globl car16x12
+.globl car16x12Inv
+.globl matriz_posiciones_autos
+.globl coordenadaenYauto
 .data 
 .align 2
 img: .space 8192 # ahora la imagen en vez de guardar de a un word/pixel, es 1 byte/pixel 
@@ -26,7 +32,15 @@ column_heigh: .space 3  /*corrdenadas en y de los espacios de las columnas. la 3
 pseudorandom_values: .space 13 /*13 valores que simulan aleatoriedad y un indice de seleccion:[0]-> indice; [1 -12]->numero */
 coordenadaenY: .space 2 
 limpiarPajaro: .asciiz " "
-scores: .space 1
+.align 2
+scores: .space 4
+your_score: .asciiz "TU PUNTAJE"
+.align 1
+car16x12: .space 24
+.align 1
+car16x12Inv: .space 24
+matriz_posiciones_autos: .space 12
+coordenadaenYauto: .space 1
 .text
 .ent main 
 main:
@@ -39,17 +53,7 @@ main:
 	sw $zero,($t1) # limpio los flags
 	/*
 	CONFIGURACION DEL PIC
-	 -> seleccionar pins I/O para botones
-	 -> seleccionar pines SPI
-	 -> setear temporizador
-	 Configuro puerto F: 1 1 1 1 0 0 1 1
-	 RF4 -> Boton de cambio de opcion de menu
-	 RF5 -> Boton de seleccion de opcion de menu
-		* ambos botones sirven para hacer saltar el bicho del juego
-	 RF2-> RES del display
-	 RF3-> DC del display
 	*/
-	# li $t0, 0xF3
 	la $t1, TRISF
 	li $t0, 0xFF
 	sw $t0, ($t1)
@@ -142,19 +146,13 @@ main:
 		addi $t0, $t0, 1
 		bne $t2, $t0,loop_enciendo
    j looooop
-   
+   main_loop:
 	# inicio la logica de la consola de juegos
+	# jal clean_screen
 	li $a0, 0
-	# li $v0,0
-	# jal menu # menu de seleccion de juego
-	/*beqz $v0,inicio_flappy_bird
-	li $t1,1
-	beq $v0, $t1, inicio_otro_juego
-	
-	inicio_flappy_bird:
-		jal flappy_bird
-		j terminar_consola
-	inicio_otro_juego:
-	*/
+	jal menu # menu de seleccion de juego
+	add $a0, $v0, $zero
+	jal menu_de_juego
+	j main_loop
 terminar_consola:
 .end main
