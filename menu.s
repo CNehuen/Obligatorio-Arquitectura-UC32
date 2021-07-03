@@ -8,6 +8,7 @@ MenuJuego1: .asciiz "NUEVO JUEGO"
 MenuJuego2: .asciiz "SALIR"
 .text
 menu:
+	
     /*$a0 -> selector de manu para mostrar
 	0 -> Menu principal de seleccion de juego
 	1-> Menu de juego*/
@@ -79,15 +80,24 @@ menu:
 		jal dibujar_display
 		add $t8, $zero, $zero
 	loop_seleccion_menu:
+		li $t4 ,0
+		li $t5, 0xffffffff
+		wait3:
+			addi $t4, $t4, 1
+			bne $t4, $t5,wait3
 	    # verifico si presiona el boton de cambiar opcion o elegir opcion
 		la $t3, PORTF
 		lb $t4, ($t3)
+		li $t5, 0x00
+		# los botones estan en rf4 y rf5 (0 0 0 1 0 0 0 0
+		beq $t4, $t5, loop_seleccion_menu
+		li $t5,  0x10
+		and $t5, $t5, $t4
+		bne $t5, $zero, boton_enter
+	    li $t5,  0x20
+		and $t5, $t5, $t4
+		beq $t5, $zero, loop_seleccion_menu
 		
-		beqz $t4, loop_seleccion_menu
-		li $t5,  2
-		sub $t5, $t4,$t5
-		bgez $t5, boton_enter
-	    
 		mul $a1, $t8, 10  
 	    addiu $a1, $a1, 30
 	    li $a0, 2
@@ -102,7 +112,8 @@ menu:
 	    li $a0, 2
 	    li $a2, 0xff
 	    jal dibujar_subrayar /*subrayo el item de menu actual*/
-	    /*jal dibujar_display*/
+	    jal dibujar_display
+
 		j loop_seleccion_menu
 	    renuevo_t8:
 		    add $t8,$zero, $zero

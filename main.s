@@ -115,12 +115,14 @@ main:
 	jal cargar_buffer
 	li $a0, 0x00 # set Horizontal addressing mode
 	jal cargar_buffer
-	li $a0, 0xA5
-	jal cargar_buffer
+# 	li $a0, 0xA5 # fuerza al display a prenderse completo
+# 	jal cargar_buffer
 	
-	# dejo habilitado el pin DC para carga de datos
-	# PORTF -> 0 0 0 0 1 0 0 0 
-	
+	li $t1, 150000
+	li $t0, 0 
+	loop_cambio_comando: 
+		addi $t0, $t0, 1
+		bne $t1, $t0,loop_cambio_comando
 	
 	
 	# seteo D/C# como 1 para mandar datos para pintar
@@ -129,19 +131,6 @@ main:
    sw $t1, ($t0)
    
    
-   /*looooop:
-	   li $a0, 'J'
-	   jal getFont8x8
-	   la $t0, font8x8
-	   lb $a0, ($t0)
-	   
-	   jal cargar_buffer
-	   li $t2, 0xffffffff
-	   li $t0, 0
-	loop_enciendo: 
-		addi $t0, $t0, 1
-		bne $t2, $t0,loop_enciendo
-   j looooop*/
    main_loop:
 	# inicio la logica de la consola de juegos
 	# jal clean_screen
