@@ -14,24 +14,26 @@ dibujar_display:
     addi $sp, $sp, -4 
     sw $ra, ($sp)
 	
-	la $t0, img
-	li $t2, -1
+	
+	li $s2, -1
 	loop_pagina:
-		addi $t2, $t2,1
+		la $t0, img
+		addi $s2, $s2,1
 		li $t1, 8
-		beq $t2,$t1, end_loop_pagina
+		beq $s2,$t1, end_loop_pagina
 		li $t7, 1024
-		mul $t7, $t2,$t7
+		mul $t7, $s2,$t7
 		addu $t7, $t0, $t7 # me paro al inicio de cada pagina
-		li $t1, -1
+		li $s1, -1
+		
 		loop_columnas_pagina:
-			addi $t1, $t1, 1
-			li $s1, 128
+			addi $s1, $s1, 1
+			li $t1, 128
 			beq $t1,$s1, loop_pagina
 			li $t3,-1
 			li $t8, 0x01
-			addu $s0, $t7, $t1  # me paro al inicio de cada columna
-			li $t7,0
+			addu $s0, $t7, $s1  # me paro al inicio de cada columna
+			li $a0,0
 			loop_columna_pagina:
 				addi $t3, $t3, 1
 				li $t4, 8
@@ -42,12 +44,11 @@ dibujar_display:
 				lb $t9, ($t4)
 				beqz $t9, set_bit_negro
 					# set_bit_blanco
-					or $t7, $t8, $t7
+					or $a0, $t8, $a0
 				set_bit_negro:
 				sll $t8, $t8, 1
 				j loop_columna_pagina
 				end_columna_pagina:
-					add $a0, $t7, $zero
 					jal cargar_buffer
 					j loop_columnas_pagina
 	end_loop_pagina:
