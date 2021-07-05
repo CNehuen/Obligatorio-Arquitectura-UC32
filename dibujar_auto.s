@@ -15,18 +15,19 @@ dibujar_auto:
 		cargo_invertido:
 		la $t2, car16x12Inv
 	auto_cargado:
-	mul $t1,$a1,128
+	li $t3, 128
+	mul $t1,$a1,$t3
 	addu $t1,$t1,$a0
 	addu $t0, $t0,$t1		
 	li $t3, 12  # Recorre las 12 filas 
 	addi $t0, $t0,-128		
-	addi $t0, $t0,8	
+	addi $t0, $t0,16 # 8
 	LoopCarRow: 
 	    beqz $t3, finLoopCar
 	    li $t4, 16                  # Para la matriz que contiene el auto
 		addi $t3, $t3, -1 
 	    addi  $t0, $t0, 128       # Avanzo una fila hacia abajo
-	    addi  $t0, $t0, -8			# Vuelvo 8 pixeles para atras 
+	    addi  $t0, $t0, -16			# Vuelvo 8 pixeles para atras 
 		lh $t1, ($t2)
 		addiu $t2, $t2, 2
 		li $t6, 0
@@ -52,7 +53,7 @@ dibujar_auto:
 	    			j LoopCarColumn
 	    		corto_auto:  
 	    		sub $t0, $t0, $t6
-	    		addi $t0, $t0, 8
+	    		addi $t0, $t0, 16
 	    		j LoopCarRow        
 		j LoopCarColumn
 	

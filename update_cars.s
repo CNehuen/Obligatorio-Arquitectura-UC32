@@ -8,28 +8,33 @@ update_cars:
 	li $t2,0
 	la $s0, matriz_posiciones_autos
 	lb $t1, 3($s0)
-	beq $t1,87, nuevos_autos_random
+	li $t3, 87
+	beq $t1,$t3, nuevos_autos_random
 	add $t2, $t2, $t1
 	lb $t1, 7($s0)
-	beq $t1,87, nuevos_autos_random
+	beq $t1,$t3, nuevos_autos_random
 	add $t2, $t2, $t1
 	lb $t1, 11($s0)
-	beq $t1,87, nuevos_autos_random
+	beq $t1,$t3, nuevos_autos_random
 	add $t2, $t2, $t1	
-	beq $t2, -3, nuevos_autos_random
+	li $t3, -3
+	beq $t2, $t3, nuevos_autos_random
 	j update_cars_positions
 	
 	nuevos_autos_random:
+	
 		# creo  los autos aleatoriamente, en cantidad y posiciones
 		li $t5,0
 		loop_desplazar_posiciones:
 			addiu $t5, $t5,1
-			beq $t5, 4, salir_loop_desplazar_posiciones
-			mul $t4, $t5, 4
+			li $t3, 4
+			beq $t5, $t3, salir_loop_desplazar_posiciones
+			mul $t4, $t5, $t3
 			addi $t4, $t4, -1
 			add $t4, $t4, $s0
 			li $t6, 3
 			loop_desplazar:
+	
 				addi $t6, $t6,-1       
 				sub $t7, $t4, $t6
 				lb $t1, ($t7)
@@ -42,21 +47,25 @@ update_cars:
 		la $t6, pseudorandom_values
 		lb $t9, ($t6)
 		addi $t9,$t9,7
-		bgt $t9,12, get_circular_pos
-		j get_circular_value
-		get_circular_pos:
+		li $t3, 12
+		sub $t3, $t9, $t3
+		bgtz $t3, get_circular_pos2
+		j get_circular_value2
+		get_circular_pos2:
 		addi $t9,$t9,-12
-		get_circular_value:
+		get_circular_value2:
 		sb $t9, ($t6)
 		addu $t6,$t6,$t9			
 		lb $t9, ($t6)
 		li $t8, 0x1
 		li $t6,0
 		bucle_nuevos_autos:
+	
 			addiu $t6, $t6,1
-			beq $t6, 4, fin_bucle_nuevos_autos
+			li $t3, 4
+			beq $t6, $t3, fin_bucle_nuevos_autos
 			and $t7, $t8, $t9
-			mul $t5, $t6, 4
+			mul $t5, $t6, $t3
 			addi $t5, $t5, -1
 			addu $t5, $t5, $s0
 			beqz $t7, guardo_menos_uno
@@ -74,16 +83,18 @@ update_cars:
 	update_cars_positions:
 	li $s2, 0 # contdor de posiciones en la matriz
 	loop_update_cars_positions:
-		beq $s2, 12, end_loop_update_cars_positions
+	
+		li $t3, 12
+		beq $s2, $t3, end_loop_update_cars_positions
 		add $s4, $s2, $s0
 		lb $t5, ($s4)
-		
-		beq $t5, -1, no_car_update
+		li $t3, -1
+		beq $t5, $t3, no_car_update
 			li $t3, 4
 			div $s2, $t3 
 			mflo $t3 # en t3 guardo el resultado de la division, que me indica a que carril pertenece el auto
-			
-			mul $t6, $t3,22
+			li $t5, 22
+			mul $t6, $t3,$t5
 			addiu $a1, $t6,3				# Posicion en y del auto	actual
 			lb $t5, ($s4)
 			addi $a0, $t5, -1 # nueva posicion en x del auto
@@ -92,7 +103,9 @@ update_cars:
 			beqz $a0, delete_car
 			li $a2, 0
 			jal dibujar_auto
-			bgt $a0 ,111, skip_back_line
+			li $t3, 111
+			sub $t3, $a0, $t3
+			bgtz $t3, skip_back_line
 				addi $a0, $a0,16
 				li $a2, 12
 				li $a3, 0x0
@@ -102,7 +115,8 @@ update_cars:
 		addiu $s2, $s2, 1
 		j loop_update_cars_positions
 		delete_car:
-				addi $s1, $s1, -1
+	
+	addi $s1, $s1, -1
 				beqz $s1, end_delete_car
 				li $a2, 12
 				li $a3, 0

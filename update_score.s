@@ -11,7 +11,8 @@ update_score:
 	lb $t1, ($t0)
 	la $t2, scores
 	lb $t3, ($t2)
-	beq $t1, 30, aumento_score 
+	li $t4, 30
+	beq $t1, $t4, aumento_score 
 	convertir_score:
 	# Debo convertir el int de score a string
 	la $a0, Int8x8

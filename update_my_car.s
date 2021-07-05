@@ -17,14 +17,16 @@ update_my_car:
  			 	j BajarAuto  		 	
  			 	
 				movimientoAuto:					
-				/*la $t1, control2
-				lw $t2, ($t1)*/
-				andi $t2 , $t2, 0x01
-				beqz $t2, finMovimientoAuto
-				/*la $t1, data2  
-				lw $s2, ($t1) */# 0x00 00 00 00			
-				# beq $s2, 'w', limpio_mi_posicion
-				# beq $s2, 's', limpio_mi_posicion									  						  
+				la $t3, PORTF
+				lb $t4, ($t3)
+				# los botones estan en rf4 y rf5. las resistencias estan conectadas como pull-up
+				li $t5,  0x10
+				and $t5, $t4, $t5
+				beq $t5, $zero, limpio_mi_posicion
+				li $t5,  0x20
+				and $t5, $t4, $t5
+				beq $t5, $zero, limpio_mi_posicion
+				
 				j finMovimientoAuto
 				limpio_mi_posicion:
 				la $t1, coordenadaenYauto 	# Zona y Movimiento
@@ -44,8 +46,17 @@ update_my_car:
 				end_delete_my_car:
 				la $t1, coordenadaenYauto     				        				
 				lb $t2, ($t1)  
-				# beq $s2, 'w', SubirAuto
-				# beq $s2, 's', BajarAuto	
+				la $t3, PORTF
+				lb $t4, ($t3)
+				# los botones estan en rf4 y rf5. las resistencias estan conectadas como pull-up
+				li $t5,  0x10
+				and $t5, $t4, $t5
+				beq $t5, $zero, SubirAuto
+				li $t5,  0x20
+				and $t5, $t4, $t5
+				beq $t5, $zero, BajarAuto
+				
+				j finMovimientoAuto	
 				
 			 		
 				

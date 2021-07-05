@@ -117,11 +117,13 @@ car_new_game:
 	li $a1, 41
 	jal dibujar_subrayar
 	loop_racing_game:
-		jal update_cars 
+		
+		# jal update_cars 
 		jal update_my_car
 		jal perdioAuto
 		beq $v0, 1, end_racing_game
-		jal print_score
+		# jal print_score
+		jal dibujar_display
 		j loop_racing_game
 		
 	end_racing_game:
