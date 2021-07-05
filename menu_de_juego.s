@@ -22,11 +22,15 @@ menu_de_juego:
 	gamemenu:
 		jal clean_screen
 		add $s0, $a0, $zero
-		jal menu #menu de juego
+		jal dibujar_display
+		add $a0, $s0, $zero
+		jal menu
+		
 		beqz $v0, nueva_partida 
 		j salir_juego
 		nueva_partida:
-			beq $s0, 2, juego_car
+			li $t1, 2
+			beq $s0, $t1, juego_car
 				jal flappy_new_game
 				add $a0, $v0, $zero
 				j gamemenu
@@ -40,13 +44,3 @@ menu_de_juego:
     lw $ra , ($sp) 	
 	addi $sp, $sp, 4 
 	jr $ra
-	
-	
-
-
-  
-
-
-
-
-

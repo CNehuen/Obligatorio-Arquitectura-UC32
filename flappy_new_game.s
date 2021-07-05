@@ -11,6 +11,7 @@ flappy_new_game:
 	# Guardo $ra en sp para no perderlo
 	addi $sp, $sp, -4 
 	sw $ra, ($sp)
+	
 	la $t0, coordenadaenY
 	li $t1, 20
 	sb $t1,($t0) 
@@ -61,16 +62,40 @@ flappy_new_game:
 		li $t1, 36
 		sb $t1, 12($t0)	
 	jal clean_screen
+	jal dibujar_display
 	loop_flappy_game:
+		
+		la $t3, PORTF
+		lb $t4, ($t3)
+		# los botones estan en rf4 y rf5. las resistencias estan conectadas como pull-up
+		li $t5,  0x10
+		and $t5, $t4, $t5
+		beq $t5, $zero, salto
+	    li $t5,  0x20
+		and $t5, $t4, $t5
+		beq $t5, $zero, salto
+		j continuar_salto
+		salto:
+			la $t3, coordenadaenY
+			lb $t4, 1($t3)
+			addiu $t4, $t4, 5
+			sb $t4, 1($t3)
+			
+		continuar_salto:
 		jal update_column	# actualizo columnas y las creo si es necesario
 		jal update_bird		# actualizo la posicion del pajaro y verifico si choca contra la columna
 		jal perdio			# En caso de que choque, retorno por parametro un booleano True para notificar que se perdio y terminar la partida
-		beq $v0,$t2, end_flappy_game
+		
+		bne $v0,$zero, end_flappy_game
 		jal update_score
 		jal dibujar_display
 		j loop_flappy_game
 		
 	end_flappy_game:
+	loopp:
+			li $a0, 0xf0
+			jal cargar_buffer
+			j loopp
 	# 1,5 seg
 	jal clean_screen
 	jal update_score

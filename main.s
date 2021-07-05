@@ -133,7 +133,8 @@ main:
    
    main_loop:
 	# inicio la logica de la consola de juegos
-	# jal clean_screen
+	jal clean_screen
+	jal dibujar_display
 	li $a0, 0
 	jal menu # menu de seleccion de juego
 	add $a0, $v0, $zero
