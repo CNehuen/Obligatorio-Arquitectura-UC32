@@ -82,8 +82,9 @@ flappy_new_game:
 			sb $t4, 1($t3)
 			
 		continuar_salto:
-		jal update_column	# actualizo columnas y las creo si es necesario
+		
 		jal update_bird		# actualizo la posicion del pajaro y verifico si choca contra la columna
+		jal update_column	# actualizo columnas y las creo si es necesario
 		jal perdio			# En caso de que choque, retorno por parametro un booleano True para notificar que se perdio y terminar la partida
 		
 		bne $v0,$zero, end_flappy_game
@@ -92,10 +93,11 @@ flappy_new_game:
 		j loop_flappy_game
 		
 	end_flappy_game:
-	loopp:
-			li $a0, 0xf0
-			jal cargar_buffer
-			j loopp
+	li $t1, 0
+	li $t2, 200000
+	wait5:
+		addi $t1, $t1,1
+		bne $t1, $t2, wait5
 	# 1,5 seg
 	jal clean_screen
 	jal update_score
@@ -104,7 +106,12 @@ flappy_new_game:
 	li $a1, 23
 	li $a2, 30
 	jal dibujarString
-	# 5 seg
+	jal dibujar_display
+	li $t1, 0
+	li $t2, 200000
+	wait6:
+		addi $t1, $t1,1
+		bne $t1, $t2, wait6
 	# EPILOGO
 	li $v0,1
     lw $ra , ($sp) 	

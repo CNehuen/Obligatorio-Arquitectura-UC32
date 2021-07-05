@@ -14,12 +14,15 @@ movimientoPajaro:
 	la $a0, limpiarPajaro # Es para que borre  
 	li $a1, 20 	# Posicion en x siempre es 20
 	addi $a2, $t2,0 # Voy a tener mi posicion en y 
-	jal dibujarString   
+	jal dibujarString 
+	la $a0, limpiarPajaro # Es para que borre  
+	addi $a2, $a2, -2
+	jal dibujarString
 	la $t1, coordenadaenY     				        				
 	lb $t2, ($t1) 
 	lb $t3, 1($t1) 
-	bltz $t3, BajarPajaro   	# Imagino que me apretan el boton
-	bgez $t3, SubiendoPajaro  # El boton hace que suba 2 pixeles
+	blez $t3, BajarPajaro   	# Imagino que me apretan el boton
+	bgtz $t3, SubiendoPajaro  # El boton hace que suba 2 pixeles
 
 
 	SubiendoPajaro: 

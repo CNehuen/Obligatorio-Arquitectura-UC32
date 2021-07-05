@@ -62,7 +62,7 @@ loop_move_columns:
  bltz $t2, delete_first_column
  li $t7, 10
  sub $t7, $t2, $t7
- bltz $t2, create_column_right
+ bltz $t7, create_column_right
 
  j end_update_column
 

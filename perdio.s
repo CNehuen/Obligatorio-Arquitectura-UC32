@@ -8,7 +8,8 @@ perdio:
 
 	la $t1, coordenadaenY
 	lb $t2, ($t1)
-	beq $t2, 56, perdioLaPartida
+	li $t3, 56
+	beq $t2, $t3, perdioLaPartida
 	la $t1, column_coord # Vector que tiene 3 posicions de columna
 	la $t0, img # Cargo la imagen
 	lb $t2, ($t1) # En t2 tengo la parte derecha de la primer Col
@@ -18,9 +19,9 @@ perdio:
 	blez $t1, Sobrevivio
 	li $t1, 39
 	sub $t1, $t2, $t1
-	bgez $t2, Sobrevivio
+	bgez $t1, Sobrevivio
 	addu $t8, $t0, $t2 # Se lo sumo a la imagen y lo asigno a t8
-	sub $t8, $t8, 10 # Le resto 40 posiciones para estar en la parte izq
+	addi $t8, $t8,-10 # Le resto 40 posiciones para estar en la parte izq
 	add $t9, $zero, $zero  # Contador del medio
 	# # Si mi posicion en x de la columna SUPERIOR
 	# #Toca con un blanco PERDIO
@@ -38,8 +39,9 @@ perdio:
 	TodaviaSigueConVida:
 	addi $t8, $t8, 1
 
-	bordeinterno:	
-		beq $t9, 9, sigueViviendo
+	bordeinterno:
+		li $t2, 9
+		beq $t9, $t2, sigueViviendo
 		addi $t8, $t8, 1
 		lb $t2, ($t8)
 		bne $t2, $zero, perdioLaPartida
@@ -47,7 +49,7 @@ perdio:
 		j bordeinterno
 
 	sigueViviendo:	
-	sub $t8, $t8,10 
+	addi $t8, $t8,-10 
 
 	# # Si mi posicion en x de la columna INFERIOR
 	# # Toca con un blanco PERDIO
@@ -61,7 +63,8 @@ perdio:
 	addi $t8, $t8, 1	
 
 	RecorroBorde:
-		beq $t9, 9, retrocedo
+		li $t7, 9
+		beq $t9, $t7, retrocedo
 		addi $t8, $t8, 1
 		lb $t2, ($t8)
 		bne $t2, 0, perdioLaPartida
@@ -69,15 +72,16 @@ perdio:
 		j RecorroBorde
 
 	retrocedo: 
-	sub $t8, $t8, 10
+	addi $t8, $t8, -10
 	
 	addi $t8, $t8, 128
 	j RepBusqueda
 
 	RepBusqueda:
-		beq $t4, 63, Sobrevivio
+		li $t2, 63
+		beq $t4, $t2, Sobrevivio
 		lb $t2, ($t8)
-		bne $t2, 0, perdioLaPartida
+		bne $t2, $zero, perdioLaPartida
 		addi $t8, $t8, 128
 		addi $t4, $t4, 1
 		j RepBusqueda
