@@ -18,7 +18,8 @@ menu:
     sw $ra, ($sp)
 
     beqz $a0, menu_principal
-	beq $a0, 2, car_racing_menu
+	li $t4, 2
+	beq $a0, $t4, car_racing_menu
 		la $a0, StringFlappy
 		li $a1, 2
 		li $a2, 2
@@ -31,8 +32,8 @@ menu:
 		li $a1, 2
 		li $a2, 32
 		jal dibujarString
-		li $t9,2  # Cantidad de strings seleccionables
-		addu $t8, $zero, $zero
+		li $s7,2  # Cantidad de strings seleccionables
+		addu $s6, $zero, $zero
 		j subrayar_string
 		
 	menu_principal:
@@ -48,9 +49,9 @@ menu:
 		li $a1, 2
 		li $a2, 32
 		jal dibujarString
-		li $t9,2  # Cantidad de strings seleccionables
-		add $t8, $zero, $zero
-		jal subrayar_string
+		li $s7,2  # Cantidad de strings seleccionables
+		add $s6, $zero, $zero
+		j subrayar_string
 		
 	car_racing_menu:
 		la $a0, StringRacing
@@ -65,49 +66,53 @@ menu:
 		li $a1, 2
 		li $a2, 32
 		jal dibujarString
-		li $t9,2  # Cantidad de strings seleccionables
-		add $t8, $zero, $zero
+		li $s7,2  # Cantidad de strings seleccionables
+		add $s6, $zero, $zero
 		j subrayar_string
 		
 
 	subrayar_string:
-	    mul $a1, $t8, 10  
+		li $t4, 10
+	    mul $a1, $s6, $t4
 	    addiu $a1, $a1, 30
 	    li $a0, 2
 	    li $a2, 0xff
 	    jal dibujar_subrayar /*subrayo el primer item*/
-	    # subi $t8, $t8, 1
 		jal dibujar_display
-		add $t8, $zero, $zero
+		add $s6, $zero, $zero
 	loop_seleccion_menu:
 		li $t4 ,0
-		li $t5, 0xffffffff
+		li $t5, 150
 		wait3:
-			addi $t4, $t4, 1
+			addiu $t4, $t4, 1
 			bne $t4, $t5,wait3
 	    # verifico si presiona el boton de cambiar opcion o elegir opcion
 		la $t3, PORTF
 		lb $t4, ($t3)
-		li $t5, 0x00
-		# los botones estan en rf4 y rf5 (0 0 0 1 0 0 0 0
-		beq $t4, $t5, loop_seleccion_menu
+		# los botones estan en rf4 y rf5. las resistencias estan conectadas como pull-up
 		li $t5,  0x10
-		and $t5, $t5, $t4
-		bne $t5, $zero, boton_enter
+		and $t5, $t4, $t5
+		beq $t5, $zero, boton_enter
 	    li $t5,  0x20
-		and $t5, $t5, $t4
-		beq $t5, $zero, loop_seleccion_menu
-		
-		mul $a1, $t8, 10  
+		and $t5, $t4, $t5
+		bne $t5, $zero, loop_seleccion_menu
+		li $t4 ,0
+		li $t5, 150
+		wait4:
+			addi $t4, $t4, 1
+			bne $t4, $t5,wait4
+		li $t4, 10
+		mul $a1, $s6, $t4  
 	    addiu $a1, $a1, 30
 	    li $a0, 2
 	    li $a2, 0x00
 	    jal dibujar_subrayar /*borro el subraye anterior*/
-	    addiu $t8, $t8, 1
-	    beq $t8, $t9, renuevo_t8
+	    addiu $s6, $s6, 1
+	    beq $s6, $s7, renuevo_t8
 	sigo_subrayar:
 	    /*calculo posicion Y de la linea a subrayar : y= 22(pos iniical del primer string) + t8*deltah(separacion entre strings) + 8(altura del string)*/
-	    mul $a1, $t8, 10  
+	    
+		mul $a1, $s6, $t4  
 	    addiu $a1, $a1, 30
 	    li $a0, 2
 	    li $a2, 0xff
@@ -116,11 +121,12 @@ menu:
 
 		j loop_seleccion_menu
 	    renuevo_t8:
-		    add $t8,$zero, $zero
+		    add $s6,$zero, $zero
 		    j sigo_subrayar
 
 	boton_enter:
-	    add $v0, $t8, $zero
+	    add $v0, $s6, $zero
+		
 
 	/*EPILOGO*/
 	lw $ra , ($sp) 	

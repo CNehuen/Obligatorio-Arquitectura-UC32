@@ -17,7 +17,7 @@ loop_move_columns:
 	la $t0, img
 	addi $t4, $t4,-1
 	li $t9, 64
-	addu $t8, $t0, $t5  # me coloco en la pisicion de la derecha de la primra columna
+	addu $t8, $t0, $t2  # me coloco en la pisicion de la derecha de la primra columna
 	loop_move_column:
 	   beqz $t9, end_move_columns
 	   addi $t9,$t9,-1

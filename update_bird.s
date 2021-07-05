@@ -22,8 +22,10 @@ movimientoPajaro:
 	bgez $t3, SubiendoPajaro  # El boton hace que suba 2 pixeles
 
 
-	SubiendoPajaro: 					
+	SubiendoPajaro: 
+		beqz $t2, no_subir
 		addi $t2, $t2, -1 	# Sube 1 pixel 
+		no_subir:
 		la $a0, bird8x8     # Dibuja el pajaro
 		li $a1, 20 			# Posicion en x
 		addi $a2, $t2,0		# Nueva posicion en y 19 
@@ -36,8 +38,7 @@ movimientoPajaro:
 
 
 	BajarPajaro:				
-		addi $t2, $t2, 1		 # Baja un pixel
-		beq $t2, 54, partidaPerdida                 
+		addi $t2, $t2, 1		 # Baja un pixel                
 		la $a0, bird8x8
 		li $a1, 20 
 		addi $a2, $t2,0
@@ -51,15 +52,10 @@ movimientoPajaro:
 			li $v0, 0
 		j finMovimientoPajaro
 
-	partidaPerdida: 
-		li $v0, 1
+	
 
 	finMovimientoPajaro:																									
 	# EPILOGO
 	lw $ra , ($sp) 	
 	addi $sp, $sp, 4 
 	jr $ra	
-
-
-
-

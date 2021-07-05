@@ -32,7 +32,7 @@ dibujar_display:
 			beq $t1,$s1, loop_pagina
 			li $t3,-1
 			li $t8, 0x01
-			addu $s0, $t7, $s1  # me paro al inicio de cada columna
+			addu $s3, $t7, $s1  # me paro al inicio de cada columna
 			li $a0,0
 			loop_columna_pagina:
 				addi $t3, $t3, 1
@@ -40,7 +40,7 @@ dibujar_display:
 				beq $t3,$t4, end_columna_pagina # cuando termino los 8 bits tengo que escribit el buffer
 				li $t4, 128
 				mul $t4, $t4, $t3
-				add $t4,$s0, $t4
+				add $t4,$s3, $t4
 				lb $t9, ($t4)
 				beqz $t9, set_bit_negro
 					# set_bit_blanco
